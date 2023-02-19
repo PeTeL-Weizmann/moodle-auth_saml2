@@ -25,6 +25,7 @@ use Symfony\Component\Translation\Command\XliffLintCommand as BaseLintCommand;
 class XliffLintCommand extends BaseLintCommand
 {
     protected static $defaultName = 'lint:xliff';
+    protected static $defaultDescription = 'Lints an XLIFF file and outputs encountered errors';
 
     public function __construct()
     {
@@ -57,6 +58,6 @@ Or find all files in a bundle:
   <info>php %command.full_name% @AcmeDemoBundle</info>
 
 EOF
-            );
+        );
     }
 }
